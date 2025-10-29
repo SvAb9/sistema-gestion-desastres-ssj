@@ -52,10 +52,10 @@ public class Grafo {
             if(nodo.equals(destinoId)) break;  // si llegamos al destino se termina el bucle
 
             Nodo n= nodos.get(nodo);
-            for(var e : n.getVecinos().entrySet()){  //revisa a todos los vecinos
+            for(Map. Entry<String, Double> e : n.getVecinos().entrySet()){  //revisa a todos los vecinos
                 String id = e.getKey();  // id del vecino
-                double peso= e.getKey();  // peso de la arista
-                double alt= distancia.getKey(nodo) + peso;  //distancia alternativa
+                double peso= e.getValue();  // peso de la arista
+                double alt= distancia.get(nodo) + peso;  //distancia alternativa
 
                 if(alt<distancia.get(id)){  // si el camino es mas corto
                     distancia.put(id, alt);  // actualizamos la distancia
