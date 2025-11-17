@@ -2862,7 +2862,7 @@ public class VentanaPrincipal extends JFrame {
     }
 
     // ============================================
-    // MÉTODOS AUXILIARES
+    // MÉTODOS AUXILIARs
     // ============================================
 
     private void addFormField(JPanel panel, String label, JComponent field) {
