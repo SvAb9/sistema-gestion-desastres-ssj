@@ -263,7 +263,7 @@ public class MapPanel extends JPanel {
 
             // 3. Borde del nodo
             g.setStroke(new BasicStroke(3f));
-            g.setColor(Color.BLACK);
+            g.setColor(Color.BLUE);
             g.drawOval(p.x - RADIO_NODO, p.y - RADIO_NODO,
                     RADIO_NODO * 2, RADIO_NODO * 2);
 
