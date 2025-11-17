@@ -8,22 +8,9 @@ public class Arista {
     private String origenId;
     private String destinoId;
     private double peso;
-
-    public Arista(){}
-
-    public Arista(String origenId, String destinoId, double peso) {
-        this.origenId = origenId;
-        this.destinoId = destinoId;
-        this.peso = peso;
-    }
-
-    public String getOrigenId() {
-        return origenId;
-    }
-    public String getDestinoId() {
-        return destinoId;
-    }
-    public double getPeso() {
-        return peso;
-    }
+    public Arista() {}
+    public Arista(String o, String d, double p) { this.origenId=o; this.destinoId=d; this.peso=p;}
+    public String getOrigenId(){return origenId;}
+    public String getDestinoId(){return destinoId;}
+    public double getPeso(){return peso;}
 }
