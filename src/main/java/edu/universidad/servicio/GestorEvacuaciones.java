@@ -139,7 +139,7 @@ public class GestorEvacuaciones {
     // ===== PERSISTENCIA =====
 
     private void cargarEvacuaciones() {
-        System.out.println("📂 Cargando evacuaciones desde JSON...");
+        System.out.println("Cargando evacuaciones desde JSON...");
 
         List<Evacuacion> todas = PersistenciaJSON.cargarLista(ARCHIVO_EVACUACIONES, Evacuacion.class);
 
@@ -157,7 +157,7 @@ public class GestorEvacuaciones {
             }
         }
 
-        System.out.println("✅ Evacuaciones cargadas: " + todas.size());
+        System.out.println("Evacuaciones cargadas: " + todas.size());
     }
 
     private void guardarEvacuaciones() {
@@ -175,13 +175,13 @@ public class GestorEvacuaciones {
         Evacuacion evacuacion = new Evacuacion(zona, personas);
         colaEvacuaciones.insertar(evacuacion, evacuacion.getPrioridad());
         guardarEvacuaciones();
-        System.out.println("✅ Evacuación programada: " + evacuacion);
+        System.out.println("Evacuación programada: " + evacuacion);
         return evacuacion;
     }
 
     public Evacuacion iniciarSiguienteEvacuacion(EquipoRescate equipo) {
         if (colaEvacuaciones.estaVacia()) {
-            System.out.println("ℹ️ No hay evacuaciones pendientes");
+            System.out.println("No hay evacuaciones pendientes");
             return null;
         }
 
@@ -198,7 +198,7 @@ public class GestorEvacuaciones {
         evacuacionesEnProceso.add(evacuacion);
         guardarEvacuaciones();
 
-        System.out.println("🚀 Evacuación iniciada: " + evacuacion);
+        System.out.println("Evacuación iniciada: " + evacuacion);
         return evacuacion;
     }
 
@@ -229,7 +229,7 @@ public class GestorEvacuaciones {
                 zonasEvacuadas.getOrDefault(zonaId, 0) + evacuacion.getPersonasEvacuadas());
 
         guardarEvacuaciones();
-        System.out.println("✅ Evacuación completada: " + evacuacion);
+        System.out.println("Evacuación completada: " + evacuacion);
     }
 
     // ===== CONSULTAS =====
@@ -297,7 +297,7 @@ public class GestorEvacuaciones {
 
         Map<String, Object> stats = obtenerEstadisticas();
 
-        reporte.append("📊 ESTADÍSTICAS GENERALES:\n");
+        reporte.append("ESTADÍSTICAS GENERALES:\n");
         reporte.append(String.format("   • Pendientes: %d\n", stats.get("pendientes")));
         reporte.append(String.format("   • En Proceso: %d\n", stats.get("enProceso")));
         reporte.append(String.format("   • Completadas: %d\n", stats.get("completadas")));
@@ -314,6 +314,6 @@ public class GestorEvacuaciones {
         evacuacionesCompletadas.clear();
         zonasEvacuadas.clear();
         guardarEvacuaciones();
-        System.out.println("✅ Todas las evacuaciones han sido limpiadas");
+        System.out.println("Todas las evacuaciones han sido limpiadas");
     }
 }
