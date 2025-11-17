@@ -269,7 +269,7 @@ public class MapPanel extends JPanel {
 
             // 4. Texto del nodo (ID)
             g.setFont(new Font("Segoe UI", Font.BOLD, 14));
-            g.setColor(Color.WHITE);
+            g.setColor(Color.BLACK);
             FontMetrics fm = g.getFontMetrics();
             int textX = p.x - fm.stringWidth(nodo.getId()) / 2;
             int textY = p.y + fm.getAscent() / 2;
