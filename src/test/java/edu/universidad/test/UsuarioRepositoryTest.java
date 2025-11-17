@@ -1,7 +1,7 @@
 package edu.universidad.test;
 
 import edu.universidad.modelo.Usuario;
-import edu.universidad.repository.UsuarioRepository;
+import edu.universidad.repositorio.UsuarioRepository;
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 import java.util.List;
