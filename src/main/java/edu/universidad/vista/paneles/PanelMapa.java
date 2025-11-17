@@ -23,7 +23,7 @@ public class PanelMapa {
         JPanel panel = new JPanel(new BorderLayout(20, 20));
         panel.setBackground(EstilosUI.COLOR_BACKGROUND);
 
-        JLabel title = new JLabel("🗺️ Mapa Interactivo de Operaciones");
+        JLabel title = new JLabel(" Mapa Interactivo de Operaciones");
         title.setFont(EstilosUI.FONT_TITLE);
         title.setForeground(EstilosUI.COLOR_TEXT_PRIMARY);
 

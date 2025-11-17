@@ -11,9 +11,8 @@ import java.awt.*;
 import java.util.List;
 
 /**
- * Panel de Rutas - ACTUALIZADO
- * ✅ Evacuaciones con flujo simplificado y claro
- * ✅ Programar evacuación → Inicia automáticamente
+ * Evacuaciones con flujo simplificado y claro
+ * Programar evacuación → Inicia automáticamente
  */
 public class PanelRutas {
 
@@ -40,7 +39,7 @@ public class PanelRutas {
         JPanel header = new JPanel(new BorderLayout());
         header.setOpaque(false);
 
-        JLabel title = new JLabel("🗺️ Panel de Rutas y Evacuación");
+        JLabel title = new JLabel("Panel de Rutas y Evacuación");
         title.setFont(EstilosUI.FONT_TITLE);
         title.setForeground(EstilosUI.COLOR_TEXT_PRIMARY);
 
@@ -173,7 +172,7 @@ public class PanelRutas {
     }
 
     // ============================================
-    // EVACUACIONES SIMPLIFICADAS ✅
+    // EVACUACIONES SIMPLIFICADAS
     // ============================================
 
     private JPanel createEvacuacionesPanel() {
@@ -185,7 +184,7 @@ public class PanelRutas {
         headerPanel.setOpaque(false);
         headerPanel.setBorder(new EmptyBorder(0, 0, 20, 0));
 
-        JLabel lblTitulo = new JLabel("🚨 Gestión de Evacuaciones");
+        JLabel lblTitulo = new JLabel("Gestión de Evacuaciones");
         lblTitulo.setFont(EstilosUI.FONT_SUBTITLE);
         lblTitulo.setForeground(EstilosUI.COLOR_TEXT_PRIMARY);
 
@@ -239,7 +238,7 @@ public class PanelRutas {
         spnPersonas.setAlignmentX(Component.LEFT_ALIGNMENT);
 
         // Botón de programar
-        JButton btnProgramar = new JButton("🚀 Programar Evacuación");
+        JButton btnProgramar = new JButton(" Programar Evacuación");
         EstilosUI.stylePrimaryButton(btnProgramar);
         btnProgramar.setMaximumSize(new Dimension(Integer.MAX_VALUE, 50));
         btnProgramar.setAlignmentX(Component.LEFT_ALIGNMENT);
@@ -289,7 +288,7 @@ public class PanelRutas {
             if (equipoDisponible != null) {
                 gestorEvacuaciones.iniciarSiguienteEvacuacion(equipoDisponible);
                 mensajeResultado = String.format(
-                        "✅ EVACUACIÓN INICIADA EXITOSAMENTE\n\n" +
+                        " EVACUACIÓN INICIADA EXITOSAMENTE\n\n" +
                                 "╔═════════════════════════════════════════╗\n" +
                                 "║     DETALLES DE LA EVACUACIÓN           ║\n" +
                                 "╚═════════════════════════════════════════╝\n\n" +
@@ -308,7 +307,7 @@ public class PanelRutas {
                 );
             } else {
                 mensajeResultado = String.format(
-                        "⚠️ EVACUACIÓN PROGRAMADA\n\n" +
+                        " EVACUACIÓN PROGRAMADA\n\n" +
                                 "╔═════════════════════════════════════════╗\n" +
                                 "║     DETALLES DE LA EVACUACIÓN           ║\n" +
                                 "╚═════════════════════════════════════════╝\n\n" +
