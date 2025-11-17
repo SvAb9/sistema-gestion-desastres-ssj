@@ -1,7 +1,3 @@
-/**
- * En esta clase se representan las aristas o rutas del grafo
- * une dos nodos y define el peso o distancia entre ellos
- */
 package edu.universidad.modelo;
 
 public class Arista {
@@ -10,7 +6,7 @@ public class Arista {
     private double peso;
     public Arista() {}
     public Arista(String o, String d, double p) { this.origenId=o; this.destinoId=d; this.peso=p;}
-    public String getOrigenId(){return origenId;}
-    public String getDestinoId(){return destinoId;}
+    public String getOrigen(){return origenId;}
+    public String getDestino(){return destinoId;}
     public double getPeso(){return peso;}
 }
