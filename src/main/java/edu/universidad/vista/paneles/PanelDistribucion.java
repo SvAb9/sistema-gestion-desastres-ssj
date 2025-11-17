@@ -11,12 +11,12 @@ import java.util.Map;
 
 /**
  * Panel de Distribución de Recursos con Árbol
- * ✅ CORREGIDO: Referencias entre paneles funcionando correctamente
+ * Con Referencias entre paneles funcionando correctamente
  */
 public class PanelDistribucion {
 
     private GestorRecursosLocal gestor;
-    private JTextArea txtArbolVisualizacion; // ✅ Referencia compartida
+    private JTextArea txtArbolVisualizacion; // Referencia compartida
 
     public PanelDistribucion(GestorRecursosLocal gestor) {
         this.gestor = gestor;
