@@ -2,10 +2,12 @@ package edu.universidad.vista;
 
 import edu.universidad.modelo.Grafo;
 import edu.universidad.modelo.Usuario;
-import edu.universidad.repository.UsuarioRepository;
-import edu.universidad.util.PersistenciaJSON;
+import edu.universidad.repositorio.UsuarioRepository;
+
 import javax.swing.*;
-import javax.swing.border.*;
+import javax.swing.border.CompoundBorder;
+import javax.swing.border.EmptyBorder;
+import javax.swing.border.LineBorder;
 import java.awt.*;
 import java.io.File;
 import java.util.regex.Pattern;
