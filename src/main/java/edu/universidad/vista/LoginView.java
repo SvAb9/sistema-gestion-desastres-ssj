@@ -3,20 +3,14 @@ package edu.universidad.vista;
 import edu.universidad.modelo.Grafo;
 import edu.universidad.modelo.Usuario;
 import edu.universidad.repositorio.UsuarioRepository;
-
+import edu.universidad.util.PersistenciaJSON;
 import javax.swing.*;
-import javax.swing.border.CompoundBorder;
-import javax.swing.border.EmptyBorder;
-import javax.swing.border.LineBorder;
+import javax.swing.border.*;
 import java.awt.*;
 import java.io.File;
 import java.util.regex.Pattern;
 
-/**
- * Vista de Login FINAL
- * Muestra ubicación de archivos JSON
- * Validaciones completas
- */
+
 public class LoginView extends JFrame {
 
     private static final Color COLOR_PRIMARY = new Color(67, 97, 238);
@@ -407,7 +401,7 @@ public class LoginView extends JFrame {
         System.out.println("UBICACIÓN DE ARCHIVOS JSON:");
         System.out.println("   " + new File("datos").getAbsolutePath());
         System.out.println("═══════════════════════════════════════════════════════════════");
-        System.out.println("Para borrar datos antiguos:");
+        System.out.println(" Para borrar datos antiguos:");
         System.out.println("   1. Ve a la carpeta de arriba");
         System.out.println("   2. Elimina todos los archivos .json");
         System.out.println("   3. Reinicia el programa");
