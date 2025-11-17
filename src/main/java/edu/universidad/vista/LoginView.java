@@ -12,9 +12,8 @@ import java.util.regex.Pattern;
 
 /**
  * Vista de Login FINAL
- * ✅ Muestra ubicación de archivos JSON
- * ✅ Opción de reset de datos
- * ✅ Validaciones completas
+ * Muestra ubicación de archivos JSON
+ * Validaciones completas
  */
 public class LoginView extends JFrame {
 
@@ -401,12 +400,12 @@ public class LoginView extends JFrame {
     }
 
     public static void main(String[] args) {
-        // ✅ MOSTRAR UBICACIÓN DE ARCHIVOS JSON
+        // MOSTRAR UBICACIÓN DE ARCHIVOS JSON
         System.out.println("═══════════════════════════════════════════════════════════════");
-        System.out.println("📂 UBICACIÓN DE ARCHIVOS JSON:");
+        System.out.println("UBICACIÓN DE ARCHIVOS JSON:");
         System.out.println("   " + new File("datos").getAbsolutePath());
         System.out.println("═══════════════════════════════════════════════════════════════");
-        System.out.println("ℹ️  Para borrar datos antiguos:");
+        System.out.println("Para borrar datos antiguos:");
         System.out.println("   1. Ve a la carpeta de arriba");
         System.out.println("   2. Elimina todos los archivos .json");
         System.out.println("   3. Reinicia el programa");
