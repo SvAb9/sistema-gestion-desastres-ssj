@@ -155,8 +155,8 @@ public class MapPanel extends JPanel {
         g.setColor(COLOR_ARISTA);
 
         for (var arista : grafo.getAristas()) {
-            Point p1 = coords.get(arista.getOrigenId());
-            Point p2 = coords.get(arista.getDestinoId());
+            Point p1 = coords.get(arista.getOrigen());
+            Point p2 = coords.get(arista.getDestino());
 
             if (p1 != null && p2 != null) {
                 // Dibujar línea
@@ -263,13 +263,13 @@ public class MapPanel extends JPanel {
 
             // 3. Borde del nodo
             g.setStroke(new BasicStroke(3f));
-            g.setColor(Color.BLUE);
+            g.setColor(Color.WHITE);
             g.drawOval(p.x - RADIO_NODO, p.y - RADIO_NODO,
                     RADIO_NODO * 2, RADIO_NODO * 2);
 
             // 4. Texto del nodo (ID)
             g.setFont(new Font("Segoe UI", Font.BOLD, 14));
-            g.setColor(Color.BLACK);
+            g.setColor(Color.WHITE);
             FontMetrics fm = g.getFontMetrics();
             int textX = p.x - fm.stringWidth(nodo.getId()) / 2;
             int textY = p.y + fm.getAscent() / 2;
