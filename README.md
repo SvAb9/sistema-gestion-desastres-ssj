@@ -5,6 +5,6 @@ Sistema de Gestion de Desastres DesaRecu
 Participantes:
 
 - Sara Valentina Acosta Burbano
-- Jennifer Andrea Cortés
+- Jennifer Andrea Cortés Chavarro
 - Sara Maria Otero Echeverry
 
